@@ -1,0 +1,25 @@
+.title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  position: relative;
+  letter-spacing: 3px;
+  span {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    font-size: 8rem;
+    opacity: 0.1;
+  }
+}
+
+.title.about {
+  color: #f3f5f8;
+}
+
+.title.portfolios {
+  color: #595d64;
+}
+
+.title.contact {
+  color: #f3f5f8;
+}
