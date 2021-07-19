@@ -9,6 +9,7 @@ import ContactPage from "./Pages/ContactPage";
 function App() {
   return (
     <div className="App">
+      HIHI Jason Ma
       <Switch>
         <Route path="/" exact>
           <div className="nav-bar">
