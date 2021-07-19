@@ -10,22 +10,22 @@ function NavigationBar(props) {
       <div className="nav-btn">
         <ul className="nav-items">
           <li className="nav-item">
-            <NavLink to="/" exact activeClassName="active">
+            <NavLink to={process.env.PUBLIC_URL + "/"} exact activeClassName="active">
               Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" exact activeClassName="active">
+            <NavLink to={process.env.PUBLIC_URL + "/about"} exact activeClassName="active">
               About
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/portfolios" exact activeClassName="active">
+            <NavLink to={process.env.PUBLIC_URL + "/portfolios"} exact activeClassName="active">
               Portfolios
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact" exact activeClassName="active">
+            <NavLink to={process.env.PUBLIC_URL + "/contact"} exact activeClassName="active">
               Contact
             </NavLink>
           </li>

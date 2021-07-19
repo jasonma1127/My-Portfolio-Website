@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/" exact>
+        <Route path={process.env.PUBLIC_URL + "/"} exact>
           <div className="nav-bar">
             <NavigationBar page="home"/>
           </div>
@@ -18,7 +18,7 @@ function App() {
             <HomePage />
           </div>
         </Route>
-        <Route path="/about" exact>
+        <Route path={process.env.PUBLIC_URL + "/about"} exact>
           <div className="nav-bar">
             <NavigationBar page="about"/>
           </div>
@@ -26,7 +26,7 @@ function App() {
             <AboutPage />
           </div>
         </Route>
-        <Route path="/portfolios" exact>
+        <Route path={process.env.PUBLIC_URL + "/portfolios"} exact>
           <div className="nav-bar">
             <NavigationBar page="portfolios"/>
           </div>
@@ -34,7 +34,7 @@ function App() {
             <PortfoliosPage />
           </div>
         </Route>
-        <Route path="/contact" exact>
+        <Route path={process.env.PUBLIC_URL + "/contact"} exact>
           <div className="nav-bar">
             <NavigationBar page="contact"/>
           </div>
