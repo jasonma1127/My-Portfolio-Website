@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       HIHI Jason Ma
       <Switch>
-        <Route path="/" exact>
+        <Route path={process.env.PUBLIC_URL + "/"} exact>
           <div className="nav-bar">
             <NavigationBar page="home"/>
           </div>

@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter baseUrl="/My-Portfolio-Website">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
