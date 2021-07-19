@@ -34,7 +34,7 @@ function App() {
             <PortfoliosPage />
           </div>
         </Route>
-        <Route path="/contact" exact>
+        <Route path={process.env.PUBLIC_URL + "/contact"} exact>
           <div className="nav-bar">
             <NavigationBar page="contact"/>
           </div>
