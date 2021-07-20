@@ -6,6 +6,9 @@
     margin: 0 auto;
     height: 50%;
     width: 40%;
+    @include mobile{
+      height: 35.5%;
+    }
     img {
       max-width: 100%;
       max-height: 100%;
@@ -17,6 +20,9 @@
       right: 50%;
       transform: translate(50%);
       z-index: 1;
+      @include mobile{
+        height: 30%;
+      }
       &.move {
         transition: 1s all ease;
         -webkit-transform: translate(5%, 0);
@@ -33,6 +39,9 @@
       transform: translate(-50%);
       z-index: 2;
       filter: brightness(10%);
+      @include mobile{
+        height: 32%;
+      }
       &.move {
         transition: 1s all ease;
         filter: brightness(100%);
@@ -45,6 +54,9 @@
       left: 50%;
       transform: translate(-50%);
       z-index: 1;
+      @include mobile{
+        height: 30%;
+      }
       &.move {
         transition: 1s all ease;
         -webkit-transform: translate(-5%, 0);
@@ -67,19 +79,39 @@
       opacity: 1;
       width: 35%;
       transition-delay: 1s;
+      @include pad {
+        width: 70%;
+      }
+      @include mobile{
+        width: 80%;
+      }
     }
   }
 
   .home-title {
+    margin-top: 0.5rem;
     text-align: center;
     color: #89acd2;
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 6px;
     opacity: 0;
+    @include pad{
+      margin-top: 1rem;
+      font-size: 6rem;
+    }
+    @include mobile{
+      font-size: 3rem;
+    }
     p {
       font-size: 1rem;
       color: #595d64;
+      @include pad{
+        font-size: 1.5rem;
+      }
+      @include mobile{
+        font-size: 0.5rem;
+      }
     }
     &.move {
       opacity: 1;
@@ -105,10 +137,24 @@
       border-radius: 12px;
       border-color: #90d5b1;
       color: #90d5b1;
+      @include pad{
+        margin-top: 1rem;
+        width: 30%;
+        padding: 1rem;
+      }
+      @include mobile{
+        width: 60%;
+      }
       &:hover {
-        box-shadow: inset 20vw 0 #90d5b1;
+        box-shadow: inset 16rem 0 #90d5b1;
         color: #f3f5f8;
         transition: 0.45s;
+        @include pad{
+          box-shadow: inset 19rem 0 #90d5b1;
+        }
+        @include mobile{
+          box-shadow: inset 15rem 0 #90d5b1;
+        }
       }
     }
   }

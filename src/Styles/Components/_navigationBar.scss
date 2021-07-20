@@ -5,6 +5,14 @@
   align-items: center;
   .logo {
     margin-left: 3rem;
+    @include pad{
+      margin-left: 50%;
+      transform: translate(-50%);
+      font-size: 1.8rem;
+    }
+    @include mobile{
+      font-size: 0.8rem;
+    }
   }
   .nav-btn {
     margin-right: 2rem;
@@ -19,6 +27,28 @@
         }
         .active {
           color: #90d5b1;
+        }
+      }
+      @include pad{
+        display: none;
+      }
+    }
+    .nav-item-bars{
+      display: none;
+      @include pad{
+        &.pad{
+          display: block;
+        }
+        &.mobile{
+          display: none;
+        }
+      }
+      @include mobile{
+        &.pad{
+          display: none;
+        }
+        &.mobile{
+          display: block;
         }
       }
     }
