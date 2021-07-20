@@ -58,13 +58,13 @@
   .home-bar {
     padding: 0.5rem;
     background-color: #595d64;
-    opacity: 0%;
+    opacity: 0;
     width: 0%;
     margin: 0 auto;
     border-radius: 12px;
     &.move {
       transition: 1s all ease;
-      opacity: 100%;
+      opacity: 1;
       width: 35%;
       transition-delay: 1s;
     }
@@ -76,13 +76,13 @@
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    opacity: 0%;
+    opacity: 0;
     p {
       font-size: 1rem;
       color: #595d64;
     }
     &.move {
-      opacity: 100%;
+      opacity: 1;
       transition: 1s all ease;
       transition-delay: 1s;
     }
@@ -91,9 +91,9 @@
   .home-contact-btn {
     padding: 1rem;
     text-align: center;
-    opacity: 0%;
+    opacity: 0;
     &.move {
-      opacity: 100%;
+      opacity: 1;
       transition: 1s all ease;
       transition-delay: 1s;
     }
@@ -123,10 +123,10 @@
       .icon {
         font-size: 2rem;
         color: #595d64;
-        opacity: 0%;
+        opacity: 0;
       }
       .gt.move {
-        opacity: 100%;
+        opacity: 1;
         transition: 1s all ease;
         transition-delay: 1s;
         &:hover {
@@ -135,7 +135,7 @@
         }
       }
       .fb.move {
-        opacity: 100%;
+        opacity: 1;
         transition: 1s all ease;
         transition-delay: 1s;
         &:hover {
@@ -144,7 +144,7 @@
         }
       }
       .wp.move {
-        opacity: 100%;
+        opacity: 1;
         transition: 1s all ease;
         transition-delay: 1s;
         &:hover {
@@ -153,7 +153,7 @@
         }
       }
       .yt.move {
-        opacity: 100%;
+        opacity: 1;
         transition: 1s all ease;
         transition-delay: 1s;
         &:hover {
