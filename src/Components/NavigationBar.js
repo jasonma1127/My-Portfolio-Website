@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavigationBar(props) {
+  const [click, setClick] = useState(false);
+
+  const clickHandler = () => setClick(!click);
+
   return (
     <div className={`navigation-bar ${props.page}`}>
       <div className="logo">
         <h1>JASON Ma</h1>
       </div>
       <div className="nav-btn">
-        <ul className="nav-items">
-          <li className="nav-item">
+        <ul className={click? "nav-items active" : "nav-items"}>
+          <li className="nav-item" onClick={clickHandler}>
             <NavLink
               to={process.env.PUBLIC_URL + "/"}
               exact
@@ -20,7 +24,7 @@ function NavigationBar(props) {
               Home
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" onClick={clickHandler}>
             <NavLink
               to={process.env.PUBLIC_URL + "/about"}
               exact
@@ -29,7 +33,7 @@ function NavigationBar(props) {
               About
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" onClick={clickHandler}>
             <NavLink
               to={process.env.PUBLIC_URL + "/portfolios"}
               exact
@@ -38,7 +42,7 @@ function NavigationBar(props) {
               Portfolios
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" onClick={clickHandler}>
             <NavLink
               to={process.env.PUBLIC_URL + "/contact"}
               exact
@@ -48,11 +52,11 @@ function NavigationBar(props) {
             </NavLink>
           </li>
         </ul>
-        <span className="nav-item-bars pad">
-          <FontAwesomeIcon icon={faBars} className="fa-3x"/>
+        <span className="nav-item-icons pad" onClick={clickHandler}>
+          <FontAwesomeIcon icon={click? faTimes : faBars} className="fa-3x"/>
         </span>
-        <span className="nav-item-bars mobile">
-          <FontAwesomeIcon icon={faBars} className="fa-1x"/>
+        <span className="nav-item-icons mobile" onClick={clickHandler}>
+          <FontAwesomeIcon icon={click? faTimes : faBars} className="fa-1x"/>
         </span>
       </div>
     </div>
