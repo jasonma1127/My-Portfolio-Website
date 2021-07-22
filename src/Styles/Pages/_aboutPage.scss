@@ -1,4 +1,13 @@
 .about-page {
   height: 100%;
   background-color: #595d64;
+  .content-section {
+    background-color: #595d64;
+    display: flex;
+    justify-content: space-around;
+    @include pad {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }

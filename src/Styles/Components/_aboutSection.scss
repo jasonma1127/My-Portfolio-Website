@@ -1,0 +1,66 @@
+.about-section {
+  width: 42%;
+  height: 85%;
+  border-radius: 12px;
+  color: #595d64;
+  @include pad {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    color: #90d5b1;
+    margin-bottom: 1.5rem;
+  }
+  .about-info {
+    background-color: #f3f5f8;
+    border-radius: 12px;
+    .about-details {
+      display: flex;
+      @include pad {
+        font-size: 1.8rem;
+      }
+      @include mobile {
+        font-size: 0.8rem;
+      }
+      .about-items {
+        margin-top: 0.5rem;
+        margin-left: 1.3rem;
+        list-style: none;
+        font-weight: bold;
+        width: 40%;
+        height: 80%;
+        .about-item {
+          padding: 0.8rem;
+        }
+      }
+      .info-items {
+        margin-top: 0.5rem;
+        list-style: none;
+        height: 80%;
+        .info-item {
+          padding: 0.8rem;
+        }
+      }
+    }
+    .download-cv-btn {
+      text-align: center;
+      margin: 0 auto;
+      padding: 1.5rem;
+      button {
+        font-size: 1.3rem;
+        width: 340;
+        padding: 0.8rem;
+        background-color: #f3f5f8;
+        border-radius: 12px;
+        border-color: #90d5b1;
+        color: #90d5b1;
+        &:hover {
+          box-shadow: inset 10rem 0 #90d5b1;
+          color: #f3f5f8;
+          transition: 0.45s;
+        }
+      }
+    }
+  }
+}

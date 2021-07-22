@@ -1,0 +1,19 @@
+.skills-section {
+  width: 42%;
+  height: 85%;
+  @include pad {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    color: #90d5b1;
+    margin-bottom: 1.5rem;
+  }
+  .progress-bars {
+    background-color: #f3f5f8;
+    padding: 1.3rem;
+    border-radius: 12px;
+    color: #595d64;
+  }
+}

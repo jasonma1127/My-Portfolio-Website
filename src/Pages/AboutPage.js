@@ -1,4 +1,6 @@
 import React from "react";
+import AboutSection from "../Components/AboutSection";
+import SkillsSection from "../Components/SkillsSection";
 import Title from "../Components/Title";
 
 function AboutPage() {
@@ -8,7 +10,8 @@ function AboutPage() {
         <Title title="about" span="about" />
       </div>
       <div className="content-section">
-
+        <AboutSection />
+        <SkillsSection />
       </div>
     </div>
   );

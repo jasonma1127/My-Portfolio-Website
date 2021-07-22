@@ -12,11 +12,14 @@
 
 @import "./Styles/Components/navigationBar";
 @import "./Styles/Components/title";
-@import "./Styles/Components/pageLayout";
+@import "./Styles/Pages/pageLayout";
 @import "./Styles/Pages/homePage";
 @import "./Styles/Pages/aboutPage";
 @import "./Styles/Pages/portfoliosPage";
 @import "./Styles/Pages/contactPage";
+@import "./Styles/Components/aboutSection"; 
+@import "./Styles/Components//skillsSection";
+@import "./Styles/Components/progressBar";
 
 // gray #595d64
 // white #f3f5f8

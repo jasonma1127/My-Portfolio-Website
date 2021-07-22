@@ -1,0 +1,28 @@
+.progress-bar {
+  margin-bottom: 0.3rem;
+  padding: 0 1rem;
+  .progress-bar-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .progress-bar-detail {
+    display: flex;
+    p {
+      color: #89acd2;
+    }
+    .bar {
+      margin: auto;
+      margin-left: 2rem;
+      background-color: #dadada;
+      border-radius: 12px;
+      width: 100%;
+      .bar-percent{
+        background: #89acd2;
+        border-radius: 12px;
+        width: 10%;
+        padding: 0.5rem;
+        transition: 2s;
+      }
+    }
+  }
+}
