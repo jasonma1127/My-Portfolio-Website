@@ -11,7 +11,7 @@ function NavigationBar(props) {
   return (
     <div className={`navigation-bar ${props.page}`}>
       <div className="logo">
-        <h1>JASON Ma</h1>
+        <h1>JASON MA</h1>
       </div>
       <div className="nav-btn">
         <ul className={click? "nav-items active" : "nav-items"}>

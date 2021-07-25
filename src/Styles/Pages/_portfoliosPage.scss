@@ -1,4 +1,14 @@
 .portfolios-page {
   height: 100%;
   background-color: #f3f5f8;
+
+  .content-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @include pad {
+      display: block;
+    }
+  }
 }
