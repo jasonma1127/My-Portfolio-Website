@@ -6,13 +6,13 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faWordpress } from "@fortawesome/free-brands-svg-icons";
 //need to npm install "@fortawesome/react-fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import jasonMain from "../image/jason_1.png";
 import jasonLeft from "../image/jason_2.png";
 import jasonRight from "../image/jason_3.png";
 
 function HomePage() {
-  const[movement, setMovement] = useState("");
+  const [movement, setMovement] = useState("");
 
   useEffect(() => {
     setMovement("move");
@@ -21,9 +21,21 @@ function HomePage() {
   return (
     <div className="home-page">
       <div className="home-img">
-        <img className={`jasonLeft ${movement}`} src={jasonLeft} alt="jasonLeft" />
-        <img className={`jasonMain ${movement}`} src={jasonMain} alt="jasonMain" />
-        <img className={`jasonRight ${movement}`} src={jasonRight} alt="jasonRight" />
+        <img
+          className={`jasonLeft ${movement}`}
+          src={jasonLeft}
+          alt="jasonLeft"
+        />
+        <img
+          className={`jasonMain ${movement}`}
+          src={jasonMain}
+          alt="jasonMain"
+        />
+        <img
+          className={`jasonRight ${movement}`}
+          src={jasonRight}
+          alt="jasonRight"
+        />
       </div>
       <div className={`home-bar ${movement}`}></div>
       <div className={`home-title ${movement}`}>
@@ -31,22 +43,49 @@ function HomePage() {
         <p>Web Developer X Programmer</p>
       </div>
       <div className={`home-contact-btn ${movement}`}>
-        <button>Contact Me</button>
+        <Link to="/contact">
+          <button>Contact Me</button>
+        </Link>
       </div>
       <div className="icons">
-          <Link className="icon-holder">
-            <FontAwesomeIcon icon={faGithub} className={`icon gt ${movement}`} />
-          </Link>
-          <Link className="icon-holder">
-            <FontAwesomeIcon icon={faFacebook} className={`icon fb ${movement}`} />
-          </Link>
-          <Link className="icon-holder">
-            <FontAwesomeIcon icon={faWordpress} className={`icon wp ${movement}`} />
-          </Link>
-          <Link className="icon-holder">
-            <FontAwesomeIcon icon={faYoutube} className={`icon yt ${movement}`} />
-          </Link>
-        </div>
+        <Link
+          className="icon-holder"
+          to={{ pathname: "https://github.com/jasonma1127" }}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faGithub} className={`icon gt ${movement}`} />
+        </Link>
+        <Link
+          className="icon-holder"
+          to={{ pathname: "https://www.facebook.com/jason.ma.1297" }}
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faFacebook}
+            className={`icon fb ${movement}`}
+          />
+        </Link>
+        <Link
+          className="icon-holder"
+          to={{ pathname: "https://jasonmablog.wordpress.com/" }}
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faWordpress}
+            className={`icon wp ${movement}`}
+          />
+        </Link>
+        <Link
+          className="icon-holder"
+          to={{
+            pathname:
+              "https://www.youtube.com/channel/UCzOVp14LJtd6Go4mpzfNFvw",
+          }}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faYoutube} className={`icon yt ${movement}`} />
+        </Link>
+      </div>
     </div>
   );
 }
