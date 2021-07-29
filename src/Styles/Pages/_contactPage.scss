@@ -2,3 +2,91 @@
   height: 100%;
   background-color: #595d64;
 }
+
+.contact-section {
+  display: flex;
+
+  @include pad {
+    display: block;
+  }
+
+  .contact-info {
+    width: 50%;
+    padding: 2rem 4rem;
+
+    @include pad {
+      width: 100%;
+    }
+
+    @include mobile {
+      font-size: 0.8rem;
+      padding: 2rem 0;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem;
+
+      input {
+        width: 70%;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  .contact-message {
+    width: 50%;
+    padding: 2rem 0;
+
+    @include pad {
+      width: 100%;
+      padding: 0 4rem;
+    }
+
+    @include mobile {
+      font-size: 0.8rem;
+      padding: 0 0;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem;
+
+      h2 {
+        display: flex;
+        align-items: center;
+      }
+
+      textarea {
+        border-radius: 12px;
+        height: 22vh;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.contact-btn {
+  text-align: center;
+
+  button {
+    width: 25%;
+    font-size: 2.4rem;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #f3f5f8;
+    background-color: #90d5b1;
+
+    @include pad {
+      width: 35%;
+      font-size: 2rem;
+    }
+
+    @include mobile {
+      width: 45%;
+      font-size: 1.2rem;
+    }
+  }
+}
