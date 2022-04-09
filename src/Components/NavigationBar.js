@@ -19,7 +19,8 @@ function NavigationBar(props) {
             <NavLink
               to={process.env.PUBLIC_URL + "/"}
               exact
-              activeClassName="active"
+              // activeClassName="active"
+              // className={isActive => !isActive ? "test" : "abc"}
             >
               Home
             </NavLink>

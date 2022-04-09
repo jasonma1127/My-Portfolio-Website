@@ -26,7 +26,7 @@
           color: inherit;
         }
         .active {
-          color: #90d5b1;
+          color: #90d5b1 !important;
         }
       }
       @include pad{
@@ -77,21 +77,41 @@
 }
 
 .navigation-bar.home {
-  color: #f3f5f8;
   background-color: #595d64;
+  h1 {
+    color: #f3f5f8 !important;
+  }
+  a {
+    color: #f3f5f8 !important;
+  }
 }
 
 .navigation-bar.about {
-  color: #595d64;
   background-color: #f3f5f8;
+  h1 {
+    color: #595d64 !important;
+  }
+  a {
+    color: #595d64 !important;
+  }
 }
 
 .navigation-bar.portfolios {
-  color: #f3f5f8;
   background-color: #595d64;
+  h1 {
+    color: #f3f5f8 !important;
+  }
+  a {
+    color: #f3f5f8 !important;
+  }
 }
 
 .navigation-bar.contact {
-  color: #595d64;
   background-color: #f3f5f8;
+  h1 {
+    color: #595d64 !important;
+  }
+  a {
+    color: #595d64 !important;
+  }
 }

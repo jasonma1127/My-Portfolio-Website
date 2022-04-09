@@ -17,7 +17,7 @@ function AboutSection() {
             <li className="info-item">: Jason Ma</li>
             <li className="info-item">: 23</li>
             <li className="info-item">: jasonma1127@gmail.com</li>
-            <li className="info-item">: NTUT Taipei TECH</li>
+            <li className="info-item">: NTUST Taiwan TECH</li>
             <li className="info-item">: Computer Science</li>
           </ul>
         </div>
